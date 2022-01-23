@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina principal, Nombres, fotos de las mariposas y cuales pueden estar en macetas  ; Pros de tener plantas nativas.">
+    <title> Jardin de Mariposas</title>
+     <!-- favicon -->
+ <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    
+    
+    
+     <!-- hoja de estilo CSS -->
+    <link rel="STYLESHEET" href="estilos3.css">
+    <!-- estilo de fuente del titulo -->
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/bb89c49314.js" crossorigin="anonymous"></script>
+    <!-- hoja de scripts -->
+    <script src="./script.js"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-head">
+            
+            
+            <div><a  class="link" href="plantas.html">Plantas</a></div> 
+            <div><a  class="link" href="avistamientos.html"> Avistamientos</a></div>
+             
+              <h1 style="text-align: center;">
+                <!-- <img src="butterfly.png" alt="mari" width="10%"> -->
+                   Jardin de Mariposas 
+                   <!-- <img class="big" src="big.png" alt="big" width="8%"> -->
+                 </h1>
+              
+            </header>
+        <nav class="main-nav">
+            <p> <i class="fas fa-mouse-pointer"></i>Hace click en el nombre de la mariposa para ver su foto, nombre cientifico y que planta hospedera necesita.</p>
+            <ul class="slider">
+                <li> <a id="mona" href="#foto1"  title="Danaus Eripus" onclick="nece(event)" >Monarca</a>
+                <li><a id="bordedeoro" href="#foto2" onclick="nece(event)" >Borde de Oro  </a></li>
+                <li><a id="pere" href="#foto3"onclick="nece(event)" >Perezosa</a></li>
+                <li><a id="ojos" href="#foto4" onclick="nece(event)" >Cuatro Ojos</a></li>
+                <li><a  id="azu" href="#foto5" onclick="nece(event)"  >Azufrada Naranja </a></li>
+                <li><a id="aje" href="#foto6" onclick="nece(event)"  >Ajedrezada comun</a></li>
+                <li><a id="limon" href="#foto7" onclick="nece(event)"  >Limonera Grande</a></li>
+                <li><a id="limi" href="#foto8" onclick="nece(event)"  >Limoncito </a></li>
+                <li><a id="bata" href="#foto9" onclick="nece(event)"  >Bataraza</a></li>
+                <li><a id="dama" href="#foto10" onclick="nece(event)"  >Dama manchada </a></li>
+                <li><a id="frota" href="#foto11" onclick="nece(event)"  >Frotadora comun</a></li>
+                <li><a  id="horte" href="#foto12" onclick="nece(event)"  >Hortensia</a></li>
+                <li><a id="zafi" href="#foto13" onclick="nece(event)"  >Zafiro del Tala </a></li>
+                <li><a id="yuye" href="#foto14" onclick="nece(event)"  >Yuyera </a></li>
+                <li><a id="arg" href="#foto15"  onclick="nece(event)" >Bandera Argentina</a></li>
+            </ul>
+        </nav>
+        <article class="content">
+            <h2>Te gustaría tener un jardín de mariposas<span class="pregunta">?</span></h2>
+            <p>A nosotros tambien ! <br> 
+                Quizás te parezca algo muy difícil de lograr o que requiere mucho trabajo de jardinería. <br>
+                Te sorprenderá saber que no es así y que tampoco es necesario tener pasto o un terreno enorme. <br>
+            Las mariposas y diferentes polinizadores solo buscan lo que les sirve, y aquí vamos a mostrarte de manera fácil que hay que hacer, dependiendo de lo que quieras lograr.
+          </p>
+     <div  class="marco" >
+    <div class="slides">
+    <div id="foto1">  <img class="fotos" src="monarcaf.jpg" alt="monarca" title="Danaus Eripus"></div>    
+    <div id="foto2" >  <img class="fotos" src="borde.jpg" alt="Borde de Oro"  title="Battus polydama" > </div>
+    <div id="foto3" >   <img class="fotos" src="perezosa2.jpg" alt="Perezosa" title="Actinote pellenea"> </div>
+    <div  id="foto4" ><img class="fotos" src="cuatro.jpg" alt="Cuatro Ojos" title="Junonia evarete"> </div>
+    <div   id="foto5" ><img class="fotos" src="azufrada.jpg" alt="Azufrada Naranja" title="Phoebis argante" >     </div>
+    <div id="foto6" ><img class="fotos" src="ajedrezada.jpg" alt="Ajedrezada"  title="Pyrgus oileus"> </div>   
+    <div id="foto7"> <img class="fotos" src="limonera.jpeg" alt="Limonera" title="Heraclides thoas thoantiades"></div>
+    <div  id="foto8"><img class="fotos" src="limoncito.jpeg" alt="Limoncito" title="Eurema deva"> </div>
+    <div id="foto9"> <img class="fotos" src="bataraza2.jpeg" alt="Bataraza" title="Ortilia ithra"></div>
+    <div  id="foto10"> <img class="fotos" src="dama.jpg" alt="Dama manchada" title="Vanessa carye"></div>
+    <div id="foto11"> <img  class="fotos" src="frotadora.jpeg" alt="Frotadora Comun" title="Strymon eurytulus"></div>
+    <div  id="foto12"> <img class="fotos" src="hortensia.jpg" alt="Hortensia" title="Euptoieta hortensia" ></div>
+    <div id="foto13"> <img class="fotos" src="zafiro.jpeg" alt="Zafiro del Tala" title="Doxocopa laurentia"></div>
+    <div id="foto14"><img class="fotos" src="yuyera.jpg" alt="Yuyera" title="Leptotes cassius"> </div>
+    <div id="foto15"><img class="fotos" src="bandera.jpg" alt="Bandera Argentina" title="Morpho epistrophus">  </div>
+    </div>
+    
+        </div>
+        <div id="necesarias"></div>
+
+
+    
+ 
+           
+        </article>
+        <aside class="side"><p > <b>Beneficios de las plantas nativas</b></p>
+            <p> Plantas autóctonas son las propias de un país o región, no sólo nos ahorran agua y sistemas de riego que son poco económicos, sino también trabajo de cuidado y mantenimiento.
+            
+            Sostienen el equilibrio del ecosistema y están adaptadas a vivir con el agua de lluvia o poco suministro externo. Sirven de alimento, refugio y sitio de reproducción para la fauna local, que reparte las semillas y poliniza las flores, atrayendo colibríes, mariposas y otras especies.</p><br>
+         
+            <div><a class="plantas" href="plantas.html">Plantas </a></Div>
+                
+               
+        </aside>
+        <div class="ad"><h3>Nuestros Proveedores</h3>
+            <ul class="provee">
+               <li class="provee"> <a href="https://germinar.org.ar/">Germinar ONG</a> </li> 
+               <li class="provee"> <a href="http://enraizando.mitiendanube.com/">Enraizando Nativas</a>  </li>
+               <li class="provee">  <a href="http://www.nuevohanasono.com.ar/">Vivero Hanasono</a> </li>
+            </ul>
+        
+        </div>
+        <footer class="main-footer"> <a href="https://twitter.com/?lang=es" title="Twitter"><i class="fab fa-twitter"></i></a> <a href="https://m.facebook.com " title="Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://www.instagram.com/?hl=es" title="Instagram"><i class="fab fa-instagram"></i></a> <a href="https://ar.linkedin.com/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a> <a href="https://ar.pinterest.com/" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+            <p style="text-align: center;" ><b>Todos los Derechos Reservados 2021</b></p><br></footer>
+</div>
+<div class="invisibles">
+    <div class="mona">La mariposa Monarca (Danaus Eripus) <br>
+        Necesita de las siguientes plantas: Asclepias (curassavica, melladora) pueden estar en <u>macetas</u> y Tasi (es una enredadera nativa muy resistente al clima). <br>
+    Su Población es muy abundante en Bs As y sus orugas crecen (y Comen!) muy rápido.  </div> 
+    <div class="bordedeoro">La mariposa Borde de Oro (Battus polydama) <br>
+    Necesita de las siguientes plantas: Aristoloquias (Argentina, trilobata, triangularis, fimbriata), son trepadoras, pero algunas de ellas pueden estar en <u>maceta</u>. <br>
+Son de vuelo ligero y no son de posarse para libar néctar, lo que las hace difíciles de fotografiar.</div>
+     <div class="pere">La mariposa Perezosa (Actinote pellenea) <br>
+        Necesita de la planta Austroeupatorium inulifolium (Mariposera o chilca de olor) que llega a medir 2 mts de altura, aunque también puede estar en <u>maceta</u> cuando es joven. <br>
+        Es una mariposa pequeña, de vuelo pausado que le da el nombre.
+          </div>  
+    <div class="ojos">La Mariposa Cuatro ojos (Junonia evarete) <br>
+    Necesita la planta Agalinis communis (Boquita de Campo) que es un arbusto pequeño, también puede estar en <u>maceta</u>. <br>
+Las cuatro ojos son muy abundantes a partir de fines de febrero.</div>
+    <div class="azu">    Necesita del Sen de Campo (Senna corymbosa) que es un árbol mediano de flores amarillas, puede estar en maceton hasta que ya no entre, el Sen de campo también es Hospedero de otras mariposas. <br> </div>
+    <div class="aje">La mariposa Ajedrezada (Pyrgus oileus) es una mariposa pequeña de cuerpo grande con respecto a sus alas. <br>
+    Necesita de la planta Malvavisco (Sphaeralcea bonariensis) que es un arbusto, puede estar en <u>maceta</u>.</div>
+    <div class="limon">La Mariposa Limonera (Heraclides thoas thoantiades) Es una de las mariposas más grandes de Bs. As. <br>
+        Tiene un vuelo veloz y no se posa para libar néctar de las flores. <br>
+    Necesita de los árboles de Cítricos donde deposita sus huevos y crecen alli sus orugas</div>
+    <div class="limi">La mariposa Limoncito (Eurema deva) es una mariposa pequeña de vuelo rápido. <br>
+        Necesita del Sen de Campo (Senna corymbosa) que es un árbol mediano de flores amarillas, puede estar en <u>maceton</u> hasta que no entre.</div>
+  <div class="bata">La mariposa Bataraza (Ortilia ithra) es una mariposa pequeña con la coloración de una gallina bataraza(de ahí su nombre común) <br>
+            Necesita de la planta Canario Rojo (Dicliptera squarrosa), planta pequeña de florcitas rojas que gusta de estar cerca del agua. <br>
+                Puede estar en <u>macetas</u>.</div>
+   <div class="dama">La mariposa Dama manchada (Vanessa carye) es una mariposa mediana, colorida que habita casi toda América del sur. <br>
+        Necesita la plantas Sunchillo (Wedelia glauca), Malvavisco (Sphaeralcea bonariensis), ambas son de abundantes flores y pueden estar en <u>maceta</u>.   </div>
+            
+ <div class="frota">La mariposa Frotadora comun(Strymon eurytulus) es una mariposa muy pequeña de vuelo rápido, cuando esta posada suele "frotar" sus alas lo que le da su nombre. <br>
+            Necesita del Clavel del aire (Tillandsia aeränthos) es una planta que se encuentra en desiertos, bosques y montañas.
+        <br>No necesita <u>macetas</u>, se arraiga a cualquier cosa, normalmente maderas.   </div>
+ <div class="horte">La mariposa Hortensia (Euptoieta Hortensia) es una mariposa mediana que es muy abundante durante los meses de marzo-abril. <br>
+        Necesita la plata Mbrucuyá (Passifloras caerulea) o los Tréboles (Trifolium), la 1era es enredadera y crece en cualquier ambiente, los tréboles son los que vemos en el pasto.</div>
+ <div class="zafi">La Mariposa Zafiro del Talar (Doxocopa laurentia) Es una mariposa grande de color azul y negro (macho) y amarronada, naranja y blanca (hembra). <br>
+        Necesita del Tala (Celtis erhembergiana), un árbol mediano de entre 4 y 9 mts de altura, tiene espinas y pequeños frutos anaranjados.</div>
+ <div class="yuye">La mariposa Yuyera (Leptotes cassius) es una mariposa pequeña de color blanco con manchas marrones y 2 puntos azules cerca de su cola. <br>
+        Necesita de la planta Porotillo (Vigna luteola) crece en climas tropicales y templados, en pajonales, bañados u orillas de lagos. <br>
+        En <u>macetas</u> necesita mantener la tierra húmeda. </div>
+ <div class="arg">La Mariposa Bandera Argentina (Morpho epistrophus)Es una Hermosa mariposa de gran tamaño con color celeste y manchas negras que no solo liba néctar de las flores, sino que también se alimenta de frutos. <br>
+        Es difícil de encontrarse con una de esta especie en la ciudad, ya que el árbol del que se nutre, coronillo(Scutia buxifolia) es muy preciado por su madera y posee grandes espinas. En Punta Indio, Pcia. de Bs As se encuentra una reserva donde se la puede ver. </div>
+    </div>
+    
+
+ </body>
+</html>
